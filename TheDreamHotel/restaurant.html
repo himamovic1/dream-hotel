@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Dream Hotel - Restaurant & Bar</title>
+		
+		<meta name="author" content="Haris Imamovic">
+		<meta name="description" content="The Dream Hotel Restaurant & Bar Page">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato|Lobster" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<!-- Page Header -->
+		<header class="whiteOnBlack">
+			<!-- Logo Headline -->		
+			<a href="index.html" title="Home page" id="logo">The Dream Hotel</a>
+
+			<!-- Burger Navigation Icon -->
+			<img id="burgerNav" src="img/icons/menu.png" alt="Menu">
+
+			<!-- Site Navigation -->
+			<nav id="navbar" class="hideNav">
+				<ul>
+                    <li>
+                        <a href="index.html" title="Home page" >Početna</a>
+                    </li><li>
+                    	<a href="rooms.html" title="Hotel Rooms">Sobe</a>
+                    </li><li>
+                        <a href="restaurant.html" title="Restaurant & Bar" class="active">Restaurant & Barr</a>
+                    </li><li>
+                    	<a href="booking.html" title="Booking">Rezervacija</a>
+                    </li><li>
+                        <a href="contact.html" title="Contact us">Kontakt</a>
+                    </li>
+                </ul>
+			</nav>
+		</header>
+
+		<!-- Main Content Wrapper -->
+		<div>
+
+			<!-- About Spa & Wellness -->
+			<section id="roomSection" class="contentSection blackOnWhite belowHeader">
+				<div class="row">
+					<div class="col-d-4"></div>
+					<h1 class="col-d-4 sectionHeading">Restaurant &amp; Bar</h1>
+					<div class="col-d-4"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-d-3">&nbsp;</div>
+					<div class="col-d-6">
+						<p class="sectionParagraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>	
+						<br>
+						<p class="sectionParagraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.					
+						</p>
+					</div>
+					<div class="col-d-3">&nbsp;</div>
+				</div>
+			</section>
+
+			<!-- Restaurant: One -->
+			<div class="row whiteOnBlack contentSection vCenter">
+				<div class="slideshow col-d-7">
+					<ul class="vCenter">
+						<li>
+							<img src="img/hotel/restaurant/restaurant01.jpeg" alt="Our hotel">
+						</li>
+						<li>
+							<img src="img/hotel/restaurant/restaurant02.jpeg" alt="View from our hotel">
+						</li>
+						<li>
+							<img src="img/hotel/restaurant/restaurant03.jpeg" alt="Lobby">
+						</li>
+					</ul>		
+				</div>
+				<div id="contactInfoWrapper" class="contentSection col-d-5 vCenter">
+					<h1 class="sectionHeading">The Dream Restaurant</h1>
+					<p class="sectionParagraph">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<a class="button resBtt" href="#restaurantBook" title="Rezervacija">Rezervacija stola</a>
+				</div>
+			</div>		
+
+			<!-- Booking foorm -->
+			<div id="bookSection" class="contentSection blackOnWhite">
+				<div class="row">
+					<div class="col-d-3 noDisp"></div>
+					<h1 class="col-d-6 sectionHeading">Rezervacija stola</h1>
+					<div class="col-d-3 noDisp"></div>
+				</div>
+
+				<form id="restaurantBook" accept="restaurantBook.php" method="GET">
+					<div class="row">
+						<div class="col-d-3 noDisp"></div>
+						<p class="col-d-6 sectionParagraph vCenter formTip"><span>*</span>&ensp;su označena obavezna polja.</p>
+						<div class="col-d-3 noDisp"></div>
+					</div>	
+					<div class="row">
+						<div class="col-d-1 noDisp"></div>
+						<div class="inputField col-d-3">
+							<label for="lunchDate">Datum i vrijeme: <span>*</span></label>
+							<input type="datetime-local" name="lunchDate" id="lunchDate" tabindex="1" required>
+						</div>
+						<div class="col-d-0 noDisp"></div>
+						<div class="inputField col-d-3">
+							<label for="numGuests">Broj osoba: <span>*</span></label>
+							<input type="number" name="numGuests" id="numGuests" tabindex="2"  min="1" max="20" placeholder="2" required>
+						</div>
+						<div class="col-d-0 noDisp"></div>
+						<div class="inputField col-d-3">
+							<label for="tableType">Tip stola: <span>*</span></label>
+							<select name="tableType" id="tableType" tabindex="3" required>
+								<option>Standardni stol</option>
+								<option>Separe</option>
+							</select>
+						</div>
+						<div class="col-d-1 noDisp"></div>
+					</div>
+					<div class="row">
+						<div class="col-d-1 noDisp"></div>
+						<div class="inputField col-d-3">
+							<label>Vaši podaci: <span>*</span></label>
+							<input type="text" name="name" id="name" tabindex="4" placeholder="Ime i prezime" required>
+						</div>
+						<div class="col-d-0 noDisp"></div>
+						<div class="inputField col-d-3">
+							<label>Kontakt email: <span>*</span></label>
+							<input type="email" name="email" id="email" tabindex="5" placeholder="Email adresa" required>		
+						</div>
+						<div class="col-d-0 noDisp"></div>
+						<div class="inputField col-d-3">
+							<label for="customerTel">Kontakt telefon: </label>
+							<input type="tel" name="customerTel" id="customerTel" placeholder="1123/5813-2134">
+						</div>
+						<div class="col-d-1 noDisp"></div>
+					</div>
+					<div class="row">
+						<div class="col-d-3 noDisp"></div>
+						<div class="inputField col-d-6">
+							<label for="addRequest">Dodatne napomene:</label>
+							<textarea name="addRequest" id="addRequest" placeholder="Vaša napomena..." rows="7" tabindex="6"></textarea>
+						</div>
+						<div class="col-d-3 noDisp"></div>
+					</div>
+					<div class="row">
+						<div class="col-d-5 noDisp"></div>
+						<button class="button col-d-2" type="submit" name="bookRoom" id="bookRoomBtt">Zakaži termin</button>
+						<div class="col-d-5 noDisp"></div>
+					</div>
+				</form>
+			</div>	
+		
+		</div>
+
+		<!-- Page Footer -->
+		<footer class="whiteOnBlack">
+			<small>&copy; The Dream Hotel 2016.</small>
+			<small>Because life is beautiful.</small>
+			
+			<a href="#">
+				<img src="img/icons/up.png" alt="To Top">
+			</a>
+		</footer>
+
+		<!-- BurgerNav menu toggle -->
+		<script src="js/toggleMenu.js"></script>
+	</body>
+</html>
