@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+	<head>
+		<title>Dream Hotel</title>
+		
+		<meta name="author" content="Haris Imamovic">
+		<meta name="description" content="Website for The Dream Hotel">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato%7CLobster" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- jQuery potrebna za slider na početnoj stranici -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<!-- Page Header -->
+		<header class="whiteOnBlack">
+			<!-- Logo Headline -->		
+			<a href="index.html" title="Home page" id="logo">The Dream Hotel</a>
+
+			<!-- Burger Navigation Icon -->
+			<img id="burgerNav" src="img/icons/menu.png" alt="Menu">
+
+			<!-- Site Navigation -->
+			<nav id="navbar" class="hideNav">
+				<ul>
+                    <li>
+                        <a href="index.html" title="Home page" class="active">Početna</a>
+                    </li><li>
+                    	<a href="rooms.html" title="Hotel Rooms">Sobe</a>
+                    </li><li>
+                        <a href="restaurant.html" title="Restaurant & Bar">Restaurant & Bar</a>
+                    </li><li>
+                    	<a href="booking.html" title="Booking">Rezervacija</a>
+                    </li><li>
+                        <a href="contact.html" title="Contact us">Kontakt</a>
+                    </li>
+                </ul>
+			</nav>
+		</header>
+
+		<!-- Main Content Wrapper -->
+		<div>
+			
+			<!-- Slider -->
+			<div class="screenContainer">
+				<div id="sliderWrapper">
+					<img id="nextSlide" class="sliderNav" src="img/icons/next.png" alt="<">
+					<img id="prevSlide" class="sliderNav" src="img/icons/back.png" alt=">">
+					
+					<ul>
+						<li class="vCenter">
+							<article class="slideContent">
+								<h3>Doživite čarobno iskustvo</h3>
+								<a class="button" href="rooms.html" title="Saznajte više">Saznajte više</a>
+							</article>
+						</li>
+						<li class="vCenter">
+							<article class="slideContent">
+								<h3>Priuštite si odmor iz snova</h3>
+								<a class="button" href="booking.html" title="Galerija">Rezerviši</a>
+							</article>
+						</li>
+						<li class="vCenter">
+							<article class="slideContent">
+								<h3>Potražite nas</h3>
+								<a class="button" href="contact.html" title="Kontakt">Kontakt</a>
+							</article>	
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- About hotel -->
+			<section id="aboutSection" class="contentSection whiteOnBlack">
+				<div class="row">
+					<div class="col-d-4"></div>
+					<h2 class="col-d-4 sectionHeading">O našem hotelu</h2>
+					<div class="col-d-4"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-d-3">&nbsp;</div>
+					<div class="col-d-6">
+						<p class="sectionParagraph">
+							The Dream Hotel je kreiran davne 2016. godine za potrebe projekta u sklopu 
+							predmeta Web tehnologije. Ostatak je dummy... Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. 
+						</p>	
+						<br>
+						<p class="sectionParagraph">
+							It was designers desire to make it ungoverned by fashion’s impermanence that gives the hotel its timelessness that resonates everywhere, from the rooms to the most hidden corner. Thanks to this even the shortest stay at the Dream Hotel remains etched in your memory.						
+						</p>
+					</div>
+					<div class="col-d-3">&nbsp;</div>
+				</div>
+			</section>
+
+			<!-- Offers -->
+			<div id="offerSection" class="blackOnWhite">
+
+				<!-- First Row -->
+				<div class="row vCenter">
+					<img src="img/hotel/offers/restaurant.jpeg" alt="The Dream Restaurant" class="spanScreen col-d-6">
+					<div class="col-d-6 spanScreen">
+						<div class="contentSection vCenter">
+							<h1 class="sectionHeading">Naš restoran</h1>
+							<p class="sectionParagraph">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a class="button resBtt" href="restaurant.html" title="Rezervacija">Saznaj više</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Second row -->
+				<div class="row vCenter">
+					<img src="img/hotel/offers/room.png" alt="Dvokrevetna soba" class="spanScreen col-d-6">
+					<div class="col-d-6 spanScreen">
+						<div class="contentSection vCenter">
+							<h1 class="sectionHeading">Smještaj u Dream Hotelu</h1>
+							<p class="sectionParagraph">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a class="button resBtt" href="rooms.html" title="Rezervacija">Pročitaj više</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Page Footer -->
+		<footer class="whiteOnBlack">
+			<small>&copy; The Dream Hotel 2016.</small>
+			<small>Because life is beautiful.</small>
+			
+			<a href="#">
+				<img src="img/icons/up.png" alt="To Top">
+			</a>
+		</footer>
+
+		<!-- BurgerNav menu toggle -->
+		<script src="js/toggleMenu.js"></script>
+
+		<!-- Slider script -->
+		<script src="js/mainSlider.js"></script>
+	</body>
+</html>
