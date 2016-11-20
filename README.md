@@ -16,6 +16,7 @@
 ####Spirala 2:
 - [x] Galerija sa opcijom da slike gledaju u full screen modu (u okviru stranice "Galerija")
 - [x] Učitavanje podstranica bez refreh-a korištenjem AJAX-a
+- [x] Dropdown menu vidjiv na svim podstranicama koji predstavlja glavnu navigaciju
 - [x] Validacija svih formi
 
 
