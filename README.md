@@ -1,28 +1,40 @@
 ﻿## ~ The Dream Hotel ~
 ### Haris Imamović (16896)
 
-#### Šta je urađeno:
+
+### Šta je urađeno:
 - - - -
+
+####Spirala 1:
 - [x] Skice svih podstranica (5 podstranica - 5 skica)
 - [x] Sve stranice su responzivne i imaju grid layout
 - [x] Iskorišteni su media query za prilagođavanje izgleda za razlicite velicine ekrana
 - [x] Implementirane 3 HTML forme (Rezervacija soba, Rezervacija stola u restoranu, Slanje upita)
 - [x] Implementiran show/hide menu koji je vidljiv na svim podstranicama.
 - [x] Stranica nema glitcheva u okviru Google Chrome-a
- 
-#### Šta nije urađeno: 
+
+####Spirala 2:
+- [x] Galerija sa opcijom da slike gledaju u full screen modu (u okviru stranice "Galerija")
+- [x] Učitavanje podstranica bez refreh-a korištenjem AJAX-a
+- [x] Validacija svih formi
+
+
+### Šta nije urađeno: 
 - - - -
 1. error 404 unfinished work not found
 
-#### Pronađeni bug-ovi:
-- - - -
 
-#### Pronađeni bug-ovi (bez rješenja):
+### Pronađeni bug-ovi:
 - - - -
 Mozzila Firefox ne podržava neke HTML5 i CSS3 elemente koji su korišteni npr. datetime-local, animation, @keyframes i sl.
 Ostatak stranice se ponaša kako je očekivano.
 
-#### Sadržaj:
+Mozzila Firefox ne podržava datetime i datetime-local tipove inputa tako da validacija u tom browseru ne radi za ta polja.
+Potrebno je samo modificirati javascript funkciju za validaciju tih polja. Razlika ce biti samo u formatu stringa
+dobivenog kao vrijednost input-a. 
+
+
+### Sadržaj:
 - - - -
 
 * Folder Design
@@ -39,12 +51,21 @@ Ostatak stranice se ponaša kako je očekivano.
 	* Folder img
 		* Folder hotel
 		* Folder icons
-	* Folder js
-		* mainSlider.js		- Pozadinski JS kod za imageSlider na početnoj stranici (nije bilo traženo).
-		* toggleMenu.js		- Pozadinski JS kod za show/hide glavnog menu-a.
+	* Folder js¸
+		* folder validation
+			* formValidation.js - JS kod za validaciju svih formi u sklopu stranice
+		* dreamScripts.js	    - Pozadinski JS kod za sve funkcionalnosti stranice (galerija, dropdown menu, home page slider)
 	* booking.html			- HTML kod stranice za rezervaciju soba.
 	* contact.html			- HTML kod za kontakt stranicu hotela.
-	* index.html			- HTML kod početne stranice.
+	* gallery.html			- HTML kod stranice na kojoj je smještena galerija.
+	* home.html			- HTML kod pocetne stranice.
+	* index.html			- HTML kod stranice u koju učitavamo sve ostale podstranice.
 	* restaurant.html		- HTML kod stranice sa pregeldom restorana i rezervacije stolova.
 	* rooms.html			- HTML kod stranice sa pregledom svih soba koje hotel nudi.
+* Folder TheDreamHotel - Spirala01	- Backup koda sa predatog u okviru prve spirale
 
+### Napomena:
+- - - -
+
+Samo folder "TheDreamHotel" u kojem se nalazi stranica stavljen je direktno na lokaciju C:/wamp/www 
+tako da se iz browsera stranici pristupalo sa "localhost/thedreamhotel/index.html".
