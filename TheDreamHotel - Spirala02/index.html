@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+	<head>
+		<title>Dream Hotel</title>
+		
+		<meta name="author" content="Haris Imamovic">
+		<meta name="description" content="Website for The Dream Hotel">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato%7CLobster" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<!-- Page Header -->
+		<header class="whiteOnBlack">
+			<!-- Logo Headline -->		
+			<a href="index.html" title="Home page" id="logo">The Dream Hotel</a>
+
+			<!-- Burger Navigation Icon -->
+			<img id="burgerNav" src="img/icons/menu.png" alt="Menu" onclick="toggleMenu()" >
+
+			<!-- Site Navigation -->
+			<nav id="navbar" class="hideNav">
+				<ul>
+                    <li>
+                        <a href="#" title="Home page" onclick="return load('home')">Početna</a>
+                    </li><li>
+            			<a href="#" title="Hotel Rooms" onclick="return load('rooms')">Sobe</a>
+            		</li><li>
+            			<a href="#" title="Restaurant & Bar" onclick="return load('restaurant')">Restaurant</a>
+                    </li><li>
+                        <a href="#" title="Gallery" onclick="return load('gallery')">Galerija</a>
+                    </li><li>
+                    	<a href="#" title="Booking" onclick="return load('booking')">Rezervacija</a>
+                    </li><li>
+                        <a href="#" title="Contact us" onclick="return load('contact')">Kontakt</a>
+                    </li>
+                </ul>
+			</nav>
+		</header>
+
+		<!-- Main Content Wrapper -->
+		<div id="mainContent"></div>
+
+		<!-- Script for form validation -->
+		<script src="js/validation/formValidation.js"></script>
+
+		<!-- Script for loading subpages, dropdown menu, gallery, ... -->
+		<script src="js/dreamScripts.js"></script>
+	</body>
+</html>
