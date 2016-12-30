@@ -1,6 +1,6 @@
 window.onload = function() {
 	closeDropdownMenu();
-	load('search');
+	load('rooms');
 }
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

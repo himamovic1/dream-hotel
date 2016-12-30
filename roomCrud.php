@@ -46,7 +46,7 @@
 					}
 					else {
 						$name = htmlentities($_POST['name'], ENT_QUOTES);
-						$price = doubleval($_POST['price']);
+						$price = floatval($_POST['price']);
 						$desc = htmlentities($_POST['description'], ENT_QUOTES);
 						$pics = array($_POST['picNo0'], $_POST['picNo1'], $_POST['picNo2']);
 
@@ -93,7 +93,7 @@
 						$room = $roomsXml->Room[$requestedRoom];
 
 						$name = htmlentities($room->Name, ENT_QUOTES);
-						$price = doubleval($room->Price);
+						$price = floatval($room->Price);
 						$desc = htmlentities($room->Description, ENT_QUOTES);
 						$pics = $room->Pictures->Picture;
 					}
@@ -130,7 +130,7 @@
 						}	
 
 						$name = htmlentities($_POST['name'], ENT_QUOTES);
-						$price = doubleval($_POST['price']);
+						$price = floatval($_POST['price']);
 						$desc = htmlentities($_POST['description'], ENT_QUOTES);
 						$pics = array($_POST['picNo0'], $_POST['picNo1'], $_POST['picNo2']);
 
@@ -178,25 +178,27 @@
 		</div>
 
 		<form action="roomCrud.php" method="POST">
-			<input type="hidden" name="index" value="<?php echo $requestedRoom; ?>">
+			<input type="hidden" name="index" value="<?php echo $requestedRoom; ?>" >
 			<div class="row"><label for="name">Naziv: </label></div>
 			<div class="row">
-				<input type="text" name="name" value="<?php echo $name; ?>">
+				<input type="text" name="name" value="<?php echo $name; ?>" oninput="validateName(this)">
 			</div>
 
 			<div class="row"><label for="price">Cijena: </label></div>
-			<div class="row"><input type="text" name="price" value="<?php echo $price; ?>"></div>
+			<div class="row">
+				<input type="number" min="0" step="0.01" name="price" value="<?php echo $price; ?>" oninput="validatePrice(this)">
+			</div>
 
 			<div class="row"><label for="description">Opis: </label></div>
 			<div class="row">
-				<textarea name="description"><?php echo $desc; ?></textarea>
+				<textarea name="description" oninput="validateDescription(this)"><?php echo $desc; ?></textarea>
 			</div>
 
 			<div class="row"><label>Linkovi slika: </label></div>
 			<div class="row">
-				<input type="text" name="picNo0" value="<?php echo $pics[0]; ?>">
-				<input type="text" name="picNo1" value="<?php echo $pics[1]; ?>">
-				<input type="text" name="picNo2" value="<?php echo $pics[2]; ?>">
+				<input type="text" name="picNo0" value="<?php echo $pics[0]; ?>" oninput="validatePath(this)">
+				<input type="text" name="picNo1" value="<?php echo $pics[1]; ?>" oninput="validatePath(this)">
+				<input type="text" name="picNo2" value="<?php echo $pics[2]; ?>" oninput="validatePath(this)">
 			</div>
 			<div class="row">
 				<input type="submit" name="<?php echo $isCreate; ?>" value="Spasi izmjene">
@@ -208,5 +210,8 @@
 			</div>
 			<input type="hidden" name="id">
 		</form>
+
+		<!-- Script for validation -->
+		<script type="text/javascript" src="js/validation/crudValidation.js"></script>
 	</body>
 </html>

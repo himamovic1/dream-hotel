@@ -93,7 +93,7 @@
 						<div class="inputField col-d-4">
 							<label>Korisničko ime: <span>*</span></label>
 							<input type="text" name="username" id="username" tabindex="1"
-								placeholder="Korisničko ime" required>
+								placeholder="Korisničko ime" oninput="validateCredentials(this)" required>
 						</div>
 						<div class="col-d-4 noDisp"></div>
 					</div>
@@ -104,7 +104,7 @@
 						<div class="inputField col-d-4">
 							<label>Šifra: <span>*</span></label>
 							<input type="password" name="password" id="password" tabindex="2"
-								placeholder="Šifra" required>
+								placeholder="Šifra" oninput="validateCredentials(this)" required>
 						</div>
 						<div class="col-d-4 noDisp"></div>
 					</div>
@@ -112,7 +112,7 @@
 					<!-- Login button -->
 					<div class="row">
 						<div class="col-d-5 noDisp"></div>
-						<input class="col-d-2 button" type="submit" name="login" id="login" value="Prijava">
+						<input class="col-d-2 button" type="submit" name="login" id="login" tabindex="3" value="Prijava">
 						<div class="col-d-5 noDisp"></div>
 					</div>
 
@@ -139,5 +139,6 @@
 
 		<!-- Script for loading subpages, dropdown menu, gallery, ... -->
 		<script src="js/dreamScripts.js"></script>
+		<script src="js/validation/loginValidation.js"></script>
 	</body>
 </html>

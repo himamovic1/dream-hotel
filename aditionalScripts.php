@@ -50,20 +50,20 @@ function accessControl() {
 // Funkcije za validaciju podataka koji se unose za sobe
 function validateValues($name, $price, $desc, $picArray) {
 	$regOne = preg_match('/^[a-zA-Z0-9 ]{1,40}$/', $name);
-	$regTwo = preg_match('/^[0-9]+(\.|,)*[0-9]*\s?$/', $price);
-	$regThree = preg_match('/^[a-zA-Z0-9\.,!? ]{1,100}\s?$/', $desc);
+	$regTwo = preg_match('/^[0-9]+(\.|,)?[0-9]{0,2}$/', $price);
+	$regThree = preg_match('/^[a-zA-Z0-9\.,!?\s]{1,1000}$/', $desc);
 
 	$pics = validateLink($picArray[0]) && validateLink($picArray[1]) && validateLink($picArray[2]);
 	return ($regOne && $regTwo && $regThree && $pics);
 }
 
 function validateLink($link) {
-	return true;
+	return preg_match('/^([a-zA-Z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif))$/', $link);
 }
 
 // Funkcija za validaciju passworda
 function validateCredentials($pass) {
-	return preg_match('/^[A-Za-z0-9_\-]{3,20}$/', $pass);
+	return preg_match('/^[A-Za-z0-9_\-]{3,30}$/', $pass);
 }
 
 ?>
