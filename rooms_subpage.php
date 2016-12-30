@@ -48,7 +48,7 @@
 						// Povucemo sve sobe i odgovaracuje podatke iz xml fajla
 						foreach ($roomsXml->Room as $room) {
 							$name = htmlentities($room->Name);
-							$price = htmlentities($room->Price);
+							$price = floatval($room->Price);
 							$desc = htmlentities($room->Description);
 							$pics = $room->Pictures->Picture;
 

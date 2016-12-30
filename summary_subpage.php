@@ -3,7 +3,7 @@
 	include('aditionalScripts.php');
 	session_start();
 	
-	if( !accessControl() || !isset($_POST['generate'])) {
+	if( !accessControl() ) {
 		accessError();
 		exit;
 	}
@@ -96,7 +96,7 @@
 				else {
 					// Upisemo sve sobe u PDF
 					foreach ($roomsXml->Room as $room)
-						$this->putRoom($room->Name, $room->Price, $room->Description);
+						$this->putRoom(htmlentities($room->Name), htmlentities($room->Price), htmlentities($room->Description));
 				}
 			}
 		}
