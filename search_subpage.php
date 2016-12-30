@@ -1,46 +1,4 @@
-<?php 
-	include('aditionalScripts.php');
-	session_start();
-	
-	if( !accessControl() ) {
-		accessError();
-		exit;
-	}
-
-	$msg = '';
-
-	if(isset($_POST['download'])) {
-		$roomsXml = simplexml_load_file("private/xml/hotelRooms.xml");
-
-		if(!$roomsXml) $msg = 'Izvinjavamo se, došlo je do neočekivane greške';
-		else
-		{
-			// Otvaramo novi csv fajl
-			$csvRooms = fopen("SobeTheDreamHotel.csv", 'w');
-
-			if(!$csvRooms) $msg = "CSV datoteka ne moze biti kreirana";
-			else {
-				// Prepisujemo sadrzaj i zatvorimo csv fajl
-				foreach ($roomsXml->Room as $room)
-					fputcsv($csvRooms, array($room->Name, $room->Price, str_replace(',', ';', $room->Description)));
-
-				fclose($csvRooms);
-				header('Content-Type: text/csv');
-			    header('Content-Disposition: attachment; filename="SobeTheDreamHotel.csv"');
-			    header('Expires: 0');
-			    header('Cache-Control: must-revalidate');
-			    header('Pragma: public');
-			    ob_clean();
-			    flush();
-			    readfile("SobeTheDreamHotel.csv");
-			    unlink("SobeTheDreamHotel.csv");
-			    exit;	
-			}
-		}
-	}
-
-?>
-
+<!-- Subpage Heading -->
 <div class="row">
 	<div class="col-d-4 noDisp"></div>
 	<p class="errorProv noDisp">&nbsp;</p>
@@ -58,27 +16,25 @@
 	</p>
 	<div class="col-d-2 noDisp"></div>
 </div>
-<form action="download_subpage.php" method="POST">
+
+<!-- Search Form -->
+<form onsubmit="return false">
 	<div class="row">
 		<div class="col-d-1 noDisp"></div>
-		<input type="text" name="searchbox" class="col-d-7" placeholder="Unesite naziv sobe ili cijenu">
-		<input type="submit" name="search" class="button col-d-3" style="margin: 0" value="Traži">
+		<input type="text" name="searchbox" id="searchbox" class="col-d-7" size="30" 
+			placeholder="Unesite naziv sobe ili ključnu riječ iz opisa" autocomplete="off" 
+				onkeyup="liveQuery(this, true)"
+				onkeydown="enterQuery()">
+
+		<button name="search" class="button col-d-3" style="margin: 0; border: 1px solid #131313;" 
+			onclick="staticQuery()">Traži</button>
+
 		<div class="col-d-1 noDisp"></div>
 	</div>
 	<div class="row">
-		<div class="col-d-4 noDisp"></div>
-		<p class="errorProv col-d-4"><?php echo $msg; ?></p>
+		<div class="col-d-1 noDisp"></div>
+		<div id="livePreview" class="col-d-7"></div>
 		<div class="col-d-4 noDisp"></div>
 	</div>
 </form>
-<div class="row">
-	<div class="col-d-1 noDisp"></div>
-	<table class="col-d-4">
-		<tbody>
-			<tr class="row blackOnWhite">
-				<td>... nesto nesto</td>
-			</tr>
-		</tbody>
-	</table>
-	<div class="col-d-4 noDisp"></div>
-</div>
+

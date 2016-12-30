@@ -804,6 +804,28 @@ footer a img {
 	color: red;
 }
 
+
+/* ------------------------------------------ */
+/* -------------- Search Subpage ------------ */
+/* ------------------------------------------ */
+#livePreview {
+	padding: 0;
+	font-size: 2em;
+	font-family: 'Lato', sans-serif;
+}
+
+.searchHeadline {
+	padding: .4em .2em;
+	text-overflow: ellipsis;
+	color: #dd4523;
+}
+
+.searchHint {
+	padding: .4em .2em;
+	text-overflow: ellipsis;
+	box-shadow: 0 0 5px rgba(221, 69, 35, 0.8);
+}
+
 /* For large screens: */
 @media only screen and (min-width: 900px) {
 	.col-d-0 { width: 4.16%; }

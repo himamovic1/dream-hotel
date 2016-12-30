@@ -2,7 +2,7 @@
 
 // Funkcija za sredjivanje ulaznih tekstualnih podataka
 function clearInput($input) {
-	return htmlspecialchars(stripslashes(trim($input)));
+	return htmlentities(stripslashes(trim($input)));
 }
 
 // Funkcija za provjeru ispravnosti pristupnih podataka
@@ -64,6 +64,11 @@ function validateLink($link) {
 // Funkcija za validaciju passworda
 function validateCredentials($pass) {
 	return preg_match('/^[A-Za-z0-9_\-]{3,30}$/', $pass);
+}
+
+// Funkcija za validaciju
+function validateQuery($queryStr) {
+	return preg_match('/^[a-zA-Z0-9\.\/-_*]+[a-zA-Z0-9\.\/-_*\s]*$/', $queryStr);
 }
 
 ?>

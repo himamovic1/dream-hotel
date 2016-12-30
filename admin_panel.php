@@ -116,5 +116,8 @@
 
 		<!-- Script for loading subpages -->
 		<script src="js/ajaxScript.js"></script>
+
+		<!-- Script for searchbox -->
+		<script src="js/searchScript.js"></script>
 	</body>
 </html>

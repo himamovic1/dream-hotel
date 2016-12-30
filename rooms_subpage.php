@@ -26,7 +26,7 @@
 <div class="row">
 	<div class="col-d-0 noDisp"></div>
 	<form id="editDataForm" class="col-d-11">
-		<table class="roomsTable col-d-11 blackOnWhite">
+		<table class="roomsTable blackOnWhite">
 			<thead>
 				<tr>
 					<th><p>Naziv</p></th>
