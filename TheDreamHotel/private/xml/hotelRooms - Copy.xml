@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HotelRooms>
+	<Room>
+		<Name>Standard Soba</Name>
+		<Price>1200</Price>
+		<Description>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		</Description>
+		<Pictures>
+			<Picture>prva</Picture>
+			<Picture>druga</Picture>
+			<Picture>treca</Picture>
+		</Pictures>
+	</Room>
+	<Room>
+		<Name>Deluxe Soba</Name>
+		<Price>2000</Price>
+		<Description>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		</Description>
+		<Pictures>
+			<Picture>prva</Picture>
+			<Picture>druga</Picture>
+			<Picture>treca</Picture>
+		</Pictures>
+	</Room>
+	<Room>
+		<Name>Deluxe apartman</Name>
+		<Price>2500</Price>
+		<Description>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		</Description>
+		<Pictures>
+			<Picture>prva</Picture>
+			<Picture>druga</Picture>
+			<Picture>treca</Picture>
+		</Pictures>
+	</Room>
+	<Room>
+		<Name>Duplex Suite</Name>
+		<Price>3600</Price>
+		<Description>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		</Description>
+		<Pictures>
+			<Picture>prva</Picture>
+			<Picture>druga</Picture>
+			<Picture>treca</Picture>
+		</Pictures>
+	</Room>
+</HotelRooms>

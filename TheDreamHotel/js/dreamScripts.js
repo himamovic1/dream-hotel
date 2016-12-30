@@ -4,75 +4,9 @@
 // ------------------------------------------------>
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 window.onload = function() {
-	load('home');
-}
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// ------------------------------------------------>
-//           Function for loading subpages
-// ------------------------------------------------>
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-function load(page) {
-	var pageID = page;
-	var pageRequest;
-
-	if(window.XMLHttpRequest)
-		pageRequest = new XMLHttpRequest();
-	else
-		pageRequest = new ActiveXObject('Microsoft.XMLHTTP');
-
-	pageRequest.onreadystatechange = function() {
-		if(this.readyState == 4 && this.status == 200) {
-			document.getElementById('mainContent').innerHTML = this.responseText;
-			loadPageScripts(pageID); 	// <-- load additional scripts for subpages
-			window.scrollTo(0,0); 		// <-- scroll to top of the page on load 	
-			closeDropdownMenu(); 		// <-- close the dropdown menu if it's open
-		}
-	};
-
-	page = 'http://localhost/thedreamhotel/' + page + '.html';
-	pageRequest.open('GET', page, true);
-	pageRequest.send();
-	return false;
-}
-
-function loadScript(path) {
-	var container = document.getElementById('scriptContainer');
-	var script = document.createElement('script');
-
-	var request = new XMLHttpRequest();
-
-	request.onreadystatechange = function() {
-		if(this.readyState == 4 && this.status == 200) {
-			script.innerHTML = this.responseText;
-			container.appendChild(script);
-		}
-	};
-
-	path = 'js/' + path + '.js';
-	request.open('GET', path, true);
-	request.send();
-}
-
-function loadPageScripts(page) {
-	switch(page) {
-		case 'home':
-			setSliderClickEvents();
-			break;
-		case 'about':
-			break;
-		case 'rooms':
-			break;
-		case 'restaurant':
-			break;
-		case 'booking':
-			break;
-		case 'gallery':
-			setGalleryItemsClickEvents();
-			break;
-		case 'contact':
-			break;
-	}
+	closeDropdownMenu();	
+	setSliderClickEvents();
+	setGalleryItemsClickEvents();
 }
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

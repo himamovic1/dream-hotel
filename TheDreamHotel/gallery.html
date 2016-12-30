@@ -1,209 +1,266 @@
-<!-- About Gallery -->
-<section id="roomSection" class="contentSection blackOnWhite belowHeader">
-	<div class="row">
-		<div class="col-d-4"></div>
-		<h2 class="col-d-4 sectionHeading">Galerija</h2>
-		<div class="col-d-4"></div>
-	</div>
-	
-	<div class="row">
-		<div class="col-d-3">&nbsp;</div>
-		<div class="col-d-6">
-			<p class="sectionParagraph">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>	
-			<br>
-			<p class="sectionParagraph">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.					
-			</p>
+<!DOCTYPE html>
+
+<html lang="hr">
+	<head>
+		<title>The Dream Hotel</title>
+		
+		<meta name="author" content="Haris Imamovic">
+		<meta name="description" content="Website for The Dream Hotel">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato%7CLobster" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+		<!-- Page Header -->
+		<header class="whiteOnBlack">
+			<!-- Logo Headline -->		
+			<a href="index.html" title="Home page" id="logo">The Dream Hotel</a>
+
+			<!-- Burger Navigation Icon -->
+			<img id="burgerNav" src="img/icons/menu.png" alt="Menu" onclick="toggleMenu()" >
+
+			<!-- Site Navigation -->
+			<nav id="navbar" class="hideNav">
+				<ul>
+                    <li>
+                        <a href="index.html" title="Home page">Početna</a>
+                    </li><li>
+            			<a href="rooms.php" title="Hotel Rooms">Sobe</a>
+            		</li><li>
+                        <a href="gallery.html" title="Gallery">Galerija</a>
+                    </li><li>
+                    	<a href="booking.html" title="Booking">Rezervacija</a>
+                    </li><li>
+                        <a href="contact.html" title="Contact us">Kontakt</a>
+                    </li><li>
+            			<a href="login.php" title="Restaurant & Bar">Administracija</a>
+                    </li>
+                </ul>
+			</nav>
+		</header>
+
+		<!-- Main Content Wrapper -->
+		<div id="mainContent">
+			<!-- About Gallery -->
+			<section id="roomSection" class="contentSection blackOnWhite belowHeader">
+				<div class="row">
+					<div class="col-d-4"></div>
+					<h2 class="col-d-4 sectionHeading">Galerija</h2>
+					<div class="col-d-4"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-d-3">&nbsp;</div>
+					<div class="col-d-6">
+						<p class="sectionParagraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>	
+						<br>
+						<p class="sectionParagraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.					
+						</p>
+					</div>
+					<div class="col-d-3">&nbsp;</div>
+				</div>
+			</section>
+
+			<!-- Gallery Restaurant: One -->
+			<div class="whiteOnBlack contentSection">
+				<div class="row">
+					<div class="col-d-4"></div>
+					<h2 class="col-d-4 sectionHeading">The Dream Restaurant</h2>
+					<div class="col-d-4"></div>
+				</div>
+				<div class="row">
+					<div class="col-d-1 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/restaurant/restaurant01.jpeg" alt="Restaurant image 01">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/restaurant/restaurant02.jpeg" alt="Restaurant image 02">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">	
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/restaurant/restaurant03.jpeg" alt="Restaurant image 03">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-1 noDisp"></div>
+				</div>
+			</div>		
+
+			<!-- Gallery Standard Room -->
+			<div class="blackOnWhite contentSection">
+				<div class="row">
+					<div class="col-d-4"></div>
+					<h2 class="col-d-4 sectionHeading">Standardna soba</h2>
+					<div class="col-d-4"></div>
+				</div>
+				<div class="row">
+					<div class="col-d-1 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/standard01.jpg" alt="Standard Room Image 01">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/standard02.jpg" alt="Standard Room Image 02">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">	
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/standard03.jpg" alt="Standard Room Image 03">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-1 noDisp"></div>
+				</div>
+			</div>		
+
+			<!-- Gallery Deluxe Room and Deluxe Suite -->
+			<div class="whiteOnBlack contentSection">
+				<div class="row">
+					<div class="col-d-4"></div>
+					<h2 class="col-d-4 sectionHeading">Deluxe sobe i apartmani</h2>
+					<div class="col-d-4"></div>
+				</div>
+
+				<!-- Deluxe Room -->
+				<div class="row">
+					<div class="col-d-1 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/deluxe01.jpg" alt="Deluxe Room Image 01">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/deluxe02.jpg" alt="Deluxe Room Image 02">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">	
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/deluxe03.jpg" alt="Deluxe Room Image 03">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-1 noDisp"></div>
+				</div>
+
+				<!-- Deluxe Suite -->
+				<div class="row">
+					<div class="col-d-1 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/deluxe_apartment01.jpg" alt="Deluxe Suite Image 01">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/deluxe_apartment02.jpg" alt="Deluxe Suite Image 02">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">	
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/deluxe_apartment03.jpg" alt="Deluxe Suite Image 03">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-1 noDisp"></div>
+				</div>
+			</div>	
+
+			<!-- Gallery Duplex Suite -->
+			<div class="blackOnWhite contentSection">
+				<div class="row">
+					<div class="col-d-4"></div>
+					<h2 class="col-d-4 sectionHeading">Duplex Suite</h2>
+					<div class="col-d-4"></div>
+				</div>
+				<div class="row">
+					<div class="col-d-1 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/duplex_suite01.jpg" alt="Duplex Suite Image 01">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
+						<img src="img/hotel/rooms/duplex_suite02.jpg" alt="Duplex Suite Image 02">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">	
+					<div class="col-d-0 noDisp"></div>
+					<figure onclick="openGallery(this)" class="col-d-3 galleryItem" onclick="openGallery(this)">
+						<img src="img/hotel/rooms/duplex_suite03.jpg" alt="Duplex Suite Image 03">
+						<figcaption class="innerCaption vCenter">
+							<div>Prikaži</div>
+						</figcaption>
+					</figure onclick="openGallery(this)">						
+					<div class="col-d-1 noDisp"></div>
+				</div>
+			</div>
+
+			<!-- Page Footer -->
+			<footer class="whiteOnBlack">
+				<small>&copy; The Dream Hotel 2016.</small>
+				<small>Because life is beautiful.</small>
+				
+				<a href="#">
+					<img src="img/icons/up.png" alt="To Top">
+				</a>
+			</footer>
+
+			<!-- Element in which full screen images are shown -->
+			<div id="imgFrameWrapper" onclick="closeGallery()">
+				<div id="imgFrame" class="vCenter">
+					<img src="img/icons/gallery.png" alt="Gallery Placeholder">
+				</div>
+			</div>
 		</div>
-		<div class="col-d-3">&nbsp;</div>
-	</div>
-</section>
 
-<!-- Gallery Restaurant: One -->
-<div class="whiteOnBlack contentSection">
-	<div class="row">
-		<div class="col-d-4"></div>
-		<h2 class="col-d-4 sectionHeading">The Dream Restaurant</h2>
-		<div class="col-d-4"></div>
-	</div>
-	<div class="row">
-		<div class="col-d-1 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/restaurant/restaurant01.jpeg" alt="Restaurant image 01">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/restaurant/restaurant02.jpeg" alt="Restaurant image 02">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">	
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/restaurant/restaurant03.jpeg" alt="Restaurant image 03">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-1 noDisp"></div>
-	</div>
-</div>		
+		<!-- Script for form validation -->
+		<script src="js/validation/formValidation.js"></script>
 
-<!-- Gallery Standard Room -->
-<div class="blackOnWhite contentSection">
-	<div class="row">
-		<div class="col-d-4"></div>
-		<h2 class="col-d-4 sectionHeading">Standardna soba</h2>
-		<div class="col-d-4"></div>
-	</div>
-	<div class="row">
-		<div class="col-d-1 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/standard01.jpg" alt="Standard Room Image 01">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/standard02.jpg" alt="Standard Room Image 02">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">	
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/standard03.jpg" alt="Standard Room Image 03">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-1 noDisp"></div>
-	</div>
-</div>		
-
-<!-- Gallery Deluxe Room and Deluxe Suite -->
-<div class="whiteOnBlack contentSection">
-	<div class="row">
-		<div class="col-d-4"></div>
-		<h2 class="col-d-4 sectionHeading">Deluxe sobe i apartmani</h2>
-		<div class="col-d-4"></div>
-	</div>
-
-	<!-- Deluxe Room -->
-	<div class="row">
-		<div class="col-d-1 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/deluxe01.jpg" alt="Deluxe Room Image 01">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/deluxe02.jpg" alt="Deluxe Room Image 02">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">	
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/deluxe03.jpg" alt="Deluxe Room Image 03">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-1 noDisp"></div>
-	</div>
-
-	<!-- Deluxe Suite -->
-	<div class="row">
-		<div class="col-d-1 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/deluxe_apartment01.jpg" alt="Deluxe Suite Image 01">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/deluxe_apartment02.jpg" alt="Deluxe Suite Image 02">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">	
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/deluxe_apartment03.jpg" alt="Deluxe Suite Image 03">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-1 noDisp"></div>
-	</div>
-</div>	
-
-<!-- Gallery Duplex Suite -->
-<div class="blackOnWhite contentSection">
-	<div class="row">
-		<div class="col-d-4"></div>
-		<h2 class="col-d-4 sectionHeading">Duplex Suite</h2>
-		<div class="col-d-4"></div>
-	</div>
-	<div class="row">
-		<div class="col-d-1 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/duplex_suite01.jpg" alt="Duplex Suite Image 01">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem">
-			<img src="img/hotel/rooms/duplex_suite02.jpg" alt="Duplex Suite Image 02">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">	
-		<div class="col-d-0 noDisp"></div>
-		<figure onclick="openGallery(this)" class="col-d-3 galleryItem" onclick="openGallery(this)">
-			<img src="img/hotel/rooms/duplex_suite03.jpg" alt="Duplex Suite Image 03">
-			<figcaption class="innerCaption vCenter">
-				<div>Prikaži</div>
-			</figcaption>
-		</figure onclick="openGallery(this)">						
-		<div class="col-d-1 noDisp"></div>
-	</div>
-</div>
-
-<!-- Page Footer -->
-<footer class="whiteOnBlack">
-	<small>&copy; The Dream Hotel 2016.</small>
-	<small>Because life is beautiful.</small>
-	
-	<a href="#">
-		<img src="img/icons/up.png" alt="To Top">
-	</a>
-</footer>
-
-<!-- Element in which full screen images are shown -->
-<div id="imgFrameWrapper" onclick="closeGallery()">
-	<div id="imgFrame" class="vCenter">
-		<img src="img/icons/gallery.png" alt="Gallery Placeholder">
-	</div>
-</div>
+		<!-- Script for loading subpages, dropdown menu, gallery, ... -->
+		<script src="js/dreamScripts.js"></script>
+	</body>
+</html>
