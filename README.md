@@ -45,32 +45,37 @@ dobivenog kao vrijednost input-a.
 ### Sadržaj:
 - - - -
 
-* Folder Design
-	* ContactPage 			- Dizajn stranice sa kontakt podacima.
-	* HomePage 			- Dizajn za početnu stranicu.
-	* ReservationPage 		- Dizajn stranice na kojoj se obavlja rezervacija soba.
-	* RestaurantPage		- Dizajn stranice sa pregledom restorana i rezervacije stola.
-	* RoomsPage			- Dizajn stranice na kojoj je omogucen pregled svih soba koje hotel nudi.
+* Folder SpiraleBackup
+	* Design			- Dizajn stranice
+	* TheDreamHotel - Spirala 1	- Kod Predat u sklopu spirale 1
+	* TheDreamHotel - Spirala 2	- Kod Predat u sklopu spirale 2
 
-* Folder TheDreamHotel
-	* Folder css
-		* reset.css 		- CSS kod za poništavanje UAS.
-		* style.css		- CSS za oblikovanje svih stranica za DreamHotel
-	* Folder img
-		* Folder hotel
-		* Folder icons
-	* Folder js¸
-		* folder validation
-			* formValidation.js - JS kod za validaciju svih formi u sklopu stranice
-		* dreamScripts.js	    - Pozadinski JS kod za sve funkcionalnosti stranice (galerija, dropdown menu, home page slider)
-	* booking.html			- HTML kod stranice za rezervaciju soba.
-	* contact.html			- HTML kod za kontakt stranicu hotela.
-	* gallery.html			- HTML kod stranice na kojoj je smještena galerija.
-	* home.html			- HTML kod pocetne stranice.
-	* index.html			- HTML kod stranice u koju učitavamo sve ostale podstranice.
-	* restaurant.html		- HTML kod stranice sa pregeldom restorana i rezervacije stolova.
-	* rooms.html			- HTML kod stranice sa pregledom svih soba koje hotel nudi.
-* Folder TheDreamHotel - Spirala01	- Backup koda sa predatog u okviru prve spirale
+* Folder css
+	* reset.css 		- CSS kod za poništavanje UAS.
+	* style.css		- CSS za oblikovanje svih stranica za DreamHotel
+* Folder img
+	* Folder hotel
+	* Folder icons
+* Folder js¸
+	* folder validation
+		* formValidation.js - JS kod za validaciju svih formi u sklopu stranice
+	* dreamScripts.js	    - Pozadinski JS kod za sve funkcionalnosti stranice (galerija, dropdown menu, home page slider)
+* README.md	
+* aditionalScripts.php	
+* admin_panel.php	
+* booking.php	
+* contact.php	
+* download_subpage.php	
+* gallery.php
+* index.php	
+* login.php	
+* restaurant.php	
+* roomCrud.php	
+* rooms.php	
+* rooms_subpage.php	
+* searchEngine.php	
+* search_subpage.php	
+* summary_subpage.php
 
 ### Napomena:
 - - - -
