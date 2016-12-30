@@ -19,6 +19,13 @@
 - [x] Dropdown menu vidjiv na svim podstranicama koji predstavlja glavnu navigaciju
 - [x] Validacija svih formi
 
+####Spirala 3:
+- [x] Kompletan CRUD sistem za podatke o sobama.
+- [x] Omogućen download podataka o sobama u obliku csv datoteke
+- [x] Omogućeno generisanje izvještaja u pdf formatu
+- [x] Pretraga
+- [x] Deployment: http://dream-hotel-dream-hotel.44fs.preview.openshiftapps.com
+
 
 ### Šta nije urađeno: 
 - - - -
