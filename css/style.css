@@ -771,7 +771,10 @@ footer a img {
 }
 
 .roomsTable p {
-	font-size: 1.4em;
+	font-size: 1.3em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 40ch;
 }
 
 .roomsTable td {

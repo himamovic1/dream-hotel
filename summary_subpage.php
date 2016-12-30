@@ -1,4 +1,5 @@
 <?php 
+	require('fpdf.php');
 	include('aditionalScripts.php');
 	session_start();
 	
@@ -9,33 +10,15 @@
 
 	$msg = '';
 
-	if(isset($_POST['download'])) {
-		$roomsXml = simplexml_load_file("private/xml/hotelRooms.xml");
-
-		if(!$roomsXml) $msg = 'Izvinjavamo se, došlo je do neočekivane greške';
-		else
-		{
-			// Otvaramo novi csv fajl
-			$csvRooms = fopen("SobeTheDreamHotel.csv", 'w');
-
-			if(!$csvRooms) $msg = "CSV datoteka ne moze biti kreirana";
-			else {
-				// Prepisujemo sadrzaj i zatvorimo csv fajl
-				foreach ($roomsXml->Room as $room)
-					fputcsv($csvRooms, array($room->Name, $room->Price, str_replace(',', ';', $room->Description)));
-
-				fclose($csvRooms);
-				header('Content-Type: text/csv');
-			    header('Content-Disposition: attachment; filename="SobeTheDreamHotel.csv"');
-			    header('Expires: 0');
-			    header('Cache-Control: must-revalidate');
-			    header('Pragma: public');
-			    ob_clean();
-			    flush();
-			    readfile("SobeTheDreamHotel.csv");
-			    unlink("SobeTheDreamHotel.csv");
-			    exit;	
-			}
+	/**
+	*  Klasa za kreiranje PDF izvještaja
+	*/
+	class PDF extends FPDF
+	{
+		// Header
+		function header() {
+			$this->SetFont('Arial', 'B', 20);
+			$this->Cell(30,10,'The Dream Hotel',1,0,'C');
 		}
 	}
 

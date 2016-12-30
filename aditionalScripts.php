@@ -49,9 +49,9 @@ function accessControl() {
 
 // Funkcije za validaciju podataka koji se unose za sobe
 function validateValues($name, $price, $desc, $picArray) {
-	$regOne = preg_match('/[a-zA-Z0-9]{1,40}$/', $name);
-	$regTwo = preg_match('/[0-9]+(\.|,)*[0-9]*\s?$/', $price);
-	$regThree = preg_match('/[a-zA-Z0-9\.,!?]{1,100}\s?$/', $desc);
+	$regOne = preg_match('/^[a-zA-Z0-9 ]{1,40}$/', $name);
+	$regTwo = preg_match('/^[0-9]+(\.|,)*[0-9]*\s?$/', $price);
+	$regThree = preg_match('/^[a-zA-Z0-9\.,!? ]{1,100}\s?$/', $desc);
 
 	$pics = validateLink($picArray[0]) && validateLink($picArray[1]) && validateLink($picArray[2]);
 	return ($regOne && $regTwo && $regThree && $pics);

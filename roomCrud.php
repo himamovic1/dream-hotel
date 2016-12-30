@@ -60,6 +60,8 @@
 
 							if($exists) $message = 'Već postoji soba sa identicnim nazivom.';
 							else {
+								$requestedRoom = count($roomsXml);
+
 								// Dodajemo nove podatke u xml
 								$newRoom = $roomsXml->addChild('Room');
 								$newRoom->addChild('Name', $name);
@@ -99,7 +101,7 @@
 				
 				if(!empty($_POST['delete'])) {
 					$roomsXml = simplexml_load_file('private/xml/hotelRooms.xml');
-					$requestedRoom = intval($_REQUEST['id']);
+					$requestedRoom = intval($_POST['index']);
 
 					if( $requestedRoom < count($roomsXml->children()) && $requestedRoom >= 0 ) {
 						$error = false;
@@ -116,7 +118,7 @@
 				}
 				elseif(!empty($_POST['save'])) {
 					$roomsXml = simplexml_load_file('private/xml/hotelRooms.xml');
-					$requestedRoom = intval($_REQUEST['id']);
+					$requestedRoom = intval($_POST['index']);
 
 					if( $requestedRoom < count($roomsXml->children()) && $requestedRoom >= 0 ) {
 						$error = false;
@@ -175,8 +177,8 @@
 			?>
 		</div>
 
-		<form action="roomCrud.php<?php echo '?id='.$requestedRoom; ?>" method="POST">
-			<input type="hidden" name="id" value="<?php echo $requestedRoom; ?>">
+		<form action="roomCrud.php" method="POST">
+			<input type="hidden" name="index" value="<?php echo $requestedRoom; ?>">
 			<div class="row"><label for="name">Naziv: </label></div>
 			<div class="row">
 				<input type="text" name="name" value="<?php echo $name; ?>">
