@@ -1,4 +1,4 @@
-﻿## ~ The Dream Hotel ~
+﻿# ~ The Dream Hotel ~
 ### Haris Imamović (16896)
 
 
@@ -97,6 +97,7 @@ Prilikom promjene podataka o sobi, ako dođe do neke greške pri ispravljanju un
 * gallery.html 			- Stranica na kojoj je implementirana galerija
 * index.html			- Home page na kojoj je implementiran glavni slider 
 * login.php				- Stranica sa odgovarajucom PHP skriptom za prijavu administratora na stranicu
+* migrateXML.php 		- PHP skripta koja omogućava učitavanje podataka iz XML datoteke u bazu podataka
 * restaurant.html		- Stranica sa prikazom hotelskih restorana
 * roomCrud.php			- Posebna stranica sa formom na kojoj je omogucen kompletan CRUD nad sobama
 * rooms.php				- Stranica na kojoj se prikazuju sve registrovane sobe, ovu stranicu mogu vidjeti svi posjetioci
@@ -104,3 +105,9 @@ Prilikom promjene podataka o sobi, ako dođe do neke greške pri ispravljanju un
 * searchEngine.php		- PHP skripta koja odgovara na AJAX zahtjev za dostavljanje traženih podataka preko search box-a
 * search_subpage.php	- Stranica koja se ucitava u admin panel, sadrži search box
 * summary_subpage.php  	- Stranica sa odgovarajucom PHP skriptom koja omogucava kreiranje PDF izvjestaja 
+* thedreamrest.php 		- PHP skripta u kojoj je implementiran web servis
+
+
+### Napomena:
+- - - -
+web servis implementiran je tako da mu se pristupa sa ".../thedreamrest.php". Ukoliko se ne navedu dodatni parametri servis vraća json niz svih soba registrovanih u hotelu. Opcionalno se još može dodati parametar "name='dio-naziva-sobe'". U ovom slučaju servis će vratiti samo one sobe koje u nazivu sadrže substring koji je dat kao parametar.
