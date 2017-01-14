@@ -1,0 +1,34 @@
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row;
+	align-content: center;
+	justify-content: center;
+	font-size: 1.6em;
+}
+
+textarea {
+	width: 100%;
+	min-height: 5em;
+}
+
+
+input[type="text"], input[type="number"], textarea {
+	margin-top: 0.7em;
+	margin-bottom: 1.5em;
+}
+
+input[type="file"] {
+	margin-top: 1.5em;
+}
+
+input[type="submit"] {
+	margin-top: 1em;
+	background-color: #dd4523;
+	text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+	background-color: rgb(218, 65, 20);
+}

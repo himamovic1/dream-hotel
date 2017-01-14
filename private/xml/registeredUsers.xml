@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<UserCollection>
+	<User>
+		<Role>administrator</Role>
+		<Username>admin</Username>
+		<Password>admin</Password>
+	</User>
+</UserCollection>
