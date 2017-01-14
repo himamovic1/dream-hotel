@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HotelRooms>
+	<Room>
+		<Name>Retro Suite</Name>
+		<Price>454</Price>
+		<Description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</Description>
+		<Pictures>
+			<Picture title="retroSuite01.jpg">https://d3e7bfg0h5jt4g.smithassets.net/images/hotel_gallery716/416624-brody-house-hotel-budapest-hungary.jpg</Picture>
+			<Picture title="retroSuite02.jpg">https://d3e7bfg0h5jt4g.smithassets.net/images/hotel_gallery716/828398-brody-house-hotel-budapest-hungary.jpg</Picture>
+			<Picture title="retroSuite03.jpg">https://d3e7bfg0h5jt4g.smithassets.net/images/hotel_gallery716/416596-brody-house-hotel-budapest-hungary.jpg</Picture>
+		</Pictures>
+	</Room>
+	<Room>
+		<Name>Standard soba</Name>
+		<Price>120</Price>
+		<Description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</Description>
+		<Pictures>
+			<Picture title="standardRoom01.jpg">http://cdn.freshome.com/wp-content/uploads/2013/07/Dubai-Underwater-Hotel-Rooms.jpg</Picture>
+			<Picture title="standardRoom02.jpg">https://s-media-cache-ak0.pinimg.com/736x/99/c1/57/99c157284127fced463113ed68ad321e.jpg</Picture>
+			<Picture title="standardRoom03.jpg">http://www.turizmguncel.com/images/content_files/external/image/DE%20LUX%20SUITE%20(2).jpg</Picture>
+		</Pictures>
+	</Room>
+	<Room>
+		<Name>Tree House Suite</Name>
+		<Price>3450</Price>
+		<Description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</Description>
+		<Pictures>
+			<Picture title="treeHouseSuite01.jpg">http://cabanasenlosarboles.com/files/images/cabanes/hon-02.jpg</Picture>
+			<Picture title="treeHouseSuite02.jpg">http://cabanasenlosarboles.com/files/images/cabanes/hon-04.jpg</Picture>
+			<Picture title="treeHouseSuite03.jpg">http://cabanasenlosarboles.com/files/images/cabanes/hon-03.jpg</Picture>
+		</Pictures>
+	</Room>
+</HotelRooms>
+	
