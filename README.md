@@ -32,6 +32,7 @@
 - [x] Generisanje CSV i PDF datoteke prepravljeno tako da radi direktno sa bazom
 - [x] Pretraga kupi podatke iz baze
 - [x] Implementirana GET metoda REST web servisa
+- [x] Testiranje web servisa pomoću POSTMAN aplikacije
 - [x] Deployment: http://dream-hotel-dream-hotel.44fs.preview.openshiftapps.com
 
 ### Šta nije urađeno: 
@@ -60,8 +61,11 @@ Prilikom promjene podataka o sobi, ako dođe do neke greške pri ispravljanju un
 	* TheDreamHotel - Spirala 1	- Kod predat u sklopu spirale 1
 	* TheDreamHotel - Spirala 2	- Kod predat u sklopu spirale 2
 	* TheDreamHotel - Spirala 3 - Kod predat u sklopu spirale 3
+	* TheDreamHotel - Spirala 4 - Kod spirale 4 koji radi na localhost
 
 * Folder Design	- Sadrži sve skice dizajna stranice
+
+* Folder POSTMAN - Sadrži screenshot-e testiranja web servisa
 
 * Folder css
 	* reset.css 		- CSS kod za poništavanje UAS.
