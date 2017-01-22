@@ -33,7 +33,6 @@
 - [x] Pretraga kupi podatke iz baze
 - [x] Implementirana GET metoda REST web servisa
 - [x] Testiranje web servisa pomoću POSTMAN aplikacije
-- [x] Deployment: http://dream-hotel-dream-hotel.44fs.preview.openshiftapps.com
 
 ### Šta nije urađeno: 
 - - - -
@@ -114,4 +113,6 @@ Prilikom promjene podataka o sobi, ako dođe do neke greške pri ispravljanju un
 
 ### Napomena:
 - - - -
-web servis implementiran je tako da mu se pristupa sa ".../thedreamrest.php". Ukoliko se ne navedu dodatni parametri servis vraća json niz svih soba registrovanih u hotelu. Opcionalno se još može dodati parametar "name='dio-naziva-sobe'". U ovom slučaju servis će vratiti samo one sobe koje u nazivu sadrže substring koji je dat kao parametar.
+Web servis implementiran je tako da mu se pristupa sa ".../thedreamrest.php". Ukoliko se ne navedu dodatni parametri servis vraća json niz svih soba registrovanih u hotelu. Opcionalno se još može dodati parametar "name='dio-naziva-sobe'". U ovom slučaju servis će vratiti samo one sobe koje u nazivu sadrže substring koji je dat kao parametar.
+
+Priliko pokušaja deploymenta na Openshift, verzija projekta koja je radila sa bazom na localhost serveru je spašena u backup folderm, a u root folder je stavljen kod spreman za deployment. Tako da se dump baze sada nalazi u folderu /SpiraleBackup/TheDreamHotel - Spirala 04/Database/thedreambase.sql. 
